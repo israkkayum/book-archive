@@ -9,27 +9,38 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+
   <!-- SEARCH BAR SECTION -->
  <section class="container mt-5 mb-5">
-  <div class="d-flex justify-content-between align-items-center">
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
     <div class="p-2 bg-primary text-white rounded"><span id="matching-result">0</span> matching results</div>
-    <div class="input-group  w-50 p-3">
+    <div class="input-group w-50 p-3 order-3 order-lg-2 order-md-2">
       <input id="search-field" type="text" class="form-control" placeholder="Write a book name" aria-label="Recipient's username" aria-describedby="button-addon2">
       <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
     </div>
-    <div>
+    <div class="order-lg-3 order-md-3 order-2">
       <img src="logo/cart.png" alt="" style="height: 50px; width: 50px;">
     </div>
   </div>
  </section>
+
+ <!-- Spinner -->
+ <section class="container text-center" id="spinner" style="display: none;">
+  <div class="spinner-border text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+ </section>
+
    <!-- SEARCH RESULT SECTION -->
  <section class="container pb-5">
     <div id="search-result" class="row row-cols-1 row-cols-lg-2 g-4">
     </div>
  </section>
+
  <!-- RESULT NOT FOUND SECTION -->
  <section class="container text-center" id="no-result-found">
  </section>
+
  <!-- ADD JAVASCRIPT LINK -->
 <script src="book.js"></script>    
 </body>
