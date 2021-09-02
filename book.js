@@ -47,14 +47,14 @@ const showResult = books => {
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">${book.title}</h5>
-                  <p class="card-text">By ${book.author_name}</p>
+                  <p class="card-text"><span class="text-primary">By</span> ${book.author_name}</p>
                   <p class="card-text">Publisher : ${book.publisher}</p>
                   <p class="card-text"><small class="text-muted">First published in ${book.publish_date[0]}</small></p>
                 </div>
               </div>
             </div>
           </div>`;
-          
+
         searchResult.appendChild(div);
         loddingSpiner('none');
       });
